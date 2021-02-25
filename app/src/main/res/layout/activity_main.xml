@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/building"
+    android:orientation="vertical"
+
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <ImageView
+               android:layout_marginTop="70sp"
+               android:layout_gravity="center"
+               android:src="@drawable/office"
+               android:layout_width="160dp"
+               android:layout_height="160dp">
+
+           </ImageView>
+           <TextView
+               android:layout_marginTop="20dp"
+               android:layout_gravity="center"
+               android:textColor="@color/orange"
+               android:textStyle="bold"
+               android:textSize="40dp"
+               android:text="Recognize U"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+           </TextView>
+
+           <EditText
+               android:layout_gravity="center"
+               android:drawablePadding="5dp"
+               android:drawableLeft="@drawable/username"
+               android:drawableStart="@drawable/username"
+               android:textColorHint="@color/white"
+               android:hint="Username"
+               android:paddingLeft="20dp"
+               android:layout_marginTop="30sp"
+               android:background="@drawable/bakshape"
+               android:layout_width="300dp"
+               android:layout_height="40dp">
+
+           </EditText>
+
+           <EditText
+               android:layout_gravity="center"
+               android:paddingLeft="20dp"
+               android:drawablePadding="5dp"
+               android:drawableLeft="@drawable/password"
+               android:textColorHint="@color/white"
+               android:hint="Password"
+               android:inputType="textPassword"
+               android:layout_marginTop="10dp"
+               android:background="@drawable/bakshape"
+               android:layout_width="300dp"
+               android:layout_height="40dp">
+           </EditText>
+
+           <Button
+
+               android:id="@+id/loginbtn"
+               android:layout_width="300dp"
+               android:layout_height="40dp"
+               android:layout_gravity="center"
+               android:layout_marginTop="10dp"
+               android:background="@drawable/login_bg"
+               android:text="Log In"
+               app:backgroundTint="#FF5722">
+
+           </Button>
+           <TextView
+               android:clickable="true"
+               android:layout_marginTop="20dp"
+               android:textSize="20dp"
+               android:layout_gravity="center"
+               android:textStyle="bold"
+               android:textColor="@color/white"
+               android:text="Forgot Password"
+               android:layout_width="wrap_content"
+               android:layout_height="40dp">
+
+           </TextView>
+
+       </LinearLayout>
+   </ScrollView>
+
+
+</LinearLayout>
